@@ -68,6 +68,15 @@ main {
     text-decoration: none;
   }
   
+  section {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+  }
+
   h1,
   h2 {
     font-family: Verdana, Tahoma;
