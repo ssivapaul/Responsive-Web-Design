@@ -10,7 +10,10 @@ body {
     height: 50px;
     background-color: #1b1b32;
     display: flex;
-  
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
   }
   
   #logo {
@@ -23,6 +26,12 @@ body {
   h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
+  }
+  
+  
+main {
+    padding-top: 50px;
   }
   
   nav {
