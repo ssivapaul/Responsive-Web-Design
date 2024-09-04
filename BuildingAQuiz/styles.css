@@ -112,11 +112,19 @@ main {
     text-align: left;
   }
   
+  .info input, .info label {
+    display: inline-block;
+  }
+  
+  .info label {
+    text-align: right;
+  }
+  
 .info label {
     width: 10%;
     min-width: 55px;
   }
-  
+
   h3::before {
     content: "Question #";
   }
