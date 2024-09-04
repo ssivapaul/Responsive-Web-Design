@@ -107,6 +107,11 @@ main {
     font-size: 16px;
   }
   
+  .info input {
+    width: 50%;
+    text-align: left;
+  }
+  
   h3::before {
     content: "Question #";
   }
