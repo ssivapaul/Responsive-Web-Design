@@ -139,9 +139,14 @@ main {
     padding-left: 15px;
     font-size: 22px;
   }
-  
+
   h3::before {
     content: "Question #";
+  }
+  
+  .question {
+    border: none;
+    padding: 0;
   }
   
   .sr-only {
