@@ -164,12 +164,13 @@ main {
     border: 3px solid #3b3b4f;
   }
 
-  footer {
-    background-color:  #2a2a40;
+  footer, footer a {
+    background-color: #2a2a40;
     display: flex;
     justify-content: center;
+    color: #E3F2E7
   }
-  
+
   .sr-only {
     position: absolute;
     width: 1px;
