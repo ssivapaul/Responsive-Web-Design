@@ -51,4 +51,6 @@ html {
     position: sticky;
     justify-content: flex-end;
     top: 0;
+    color: #FFF;
+    background: #0a0a23;
   }
