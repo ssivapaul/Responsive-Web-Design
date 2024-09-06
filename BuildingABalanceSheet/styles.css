@@ -118,3 +118,7 @@ html {
   tr.total td:nth-of-type(3) {
     padding: 0.5rem;
   }
+
+  tr.total:hover {
+    background:#99c9ff;
+  }
