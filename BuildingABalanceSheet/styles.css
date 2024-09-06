@@ -95,3 +95,7 @@ html {
     min-width: 4rem;
     max-width: 4rem;
   }
+
+  tbody th {
+    width: calc(100% - 12rem);
+  }
