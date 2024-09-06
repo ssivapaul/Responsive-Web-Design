@@ -74,6 +74,9 @@ html {
   }
 
   table {
+    position: relative;
     border-collapse: collapse;
     border: 0;
+    width: 100%;
+    margin-top: 3rem
   }
