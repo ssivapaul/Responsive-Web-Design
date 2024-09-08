@@ -33,6 +33,9 @@
   }
 
   .cat-right-ear {
+    position: absolute;
+    top:-26px;
+    left: 163px;  
     border-right: 35px solid transparent;
     border-left: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
