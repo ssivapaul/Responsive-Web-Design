@@ -22,6 +22,8 @@ html {
   }
 
   .key {
+    margin: 2px;
+    float: left;
     background-color: #ffffff;
     position: relative;
     width: 41px;
