@@ -38,3 +38,9 @@ html {
     content:"";
     background-color: #1d1e22;
   }
+
+  .logo {
+    position: absolute;
+    width: 200px;
+    top: 23px;
+  }
