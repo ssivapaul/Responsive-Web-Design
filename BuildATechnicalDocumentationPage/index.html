@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Nav bar</header>
+      <ul>
+        <li><a class="nav-link" href="#Hello_World">Hello World </a></li>
+        <li>
+          <a class="nav-link" href="#Variables_and_Types"
+            >Variables and Types
+          </a>
+        </li>
+        <li><a class="nav-link" href="#Arrays">Arrays </a></li>
+        <li>
+          <a class="nav-link" href="#Multidimentional_Arrays"
+            >Multidimentional Arrays
+          </a>
+        </li>
+        <li><a class="nav-link" href="#Conditions">Conditions </a></li>
+        <li><a class="nav-link" href="#Strings">Strings </a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Hello_World" class="main-section">
+        <header>Hello World</header>
+        <p></p>
+        <p>
+          The C programming language is a general purpose programming language,
+          which relates closely to the way machines work. Understanding how
+          computer memory works is an important aspect of the C programming
+          language. Although C can be considered as "hard to learn", C is in
+          fact a very simple language, with very powerful capabilities.
+        </p>
+        <p>
+          C is a very common language, and it is the language of many
+          applications such as Windows, the Python interpreter, Git, and many
+          many more.
+        </p>
+
+        <p>
+          C is a compiled language - which means that in order to run it, the
+          compiler (for example, GCC or Visual Studio) must take the code that
+          we wrote, process it, and then create an executable file. This file
+          can then be executed, and will do what we intended for the program to
+          do.
+        </p>
+        <p>
+          Every C program uses libraries, which give the ability to execute
+          necessary functions. For example, the most basic function called
+          printf, which prints to the screen, is defined in the stdio.h header
+          file.
+        </p>
+        <p>
+          To add the ability to run the printf command to our program, we must
+          add the following include directive to our first line of the code:
+        </p>
+        <code
+          >int main() {<br />&emsp;&emsp;... our code goes here<br />&emsp;&emsp;return
+          0;<br />}</code
+        >
+        <p>
+          The int keyword indicates that the function main will return an
+          integer - a simple number. The number which will be returned by the
+          function indicates whether the program that we wrote worked correctly.
+          If we want to say that our code was run successfully, we will return
+          the number 0. A number greater than 0 will mean that the program that
+          we wrote failed.
+        </p>
+        <p>
+          For this tutorial, we will return 0 to indicate that our program was
+          successful.
+        </p>
+      </section>
+      <section id="Variables_and_Types" class="main-section">
+        <header>Variables and Types</header>
+        <p>
+          C has several types of variables, but there are a few basic types:
+        </p>
+        <ul>
+          <li>
+            Integers - whole numbers which can be either positive or negative.
+            Defined using char, int, short, long or long long.
+          </li>
+          <li>
+            Unsigned integers - whole numbers which can only be positive.
+            Defined using unsigned char, unsigned int, unsigned short, unsigned
+            long or unsigned long long.
+          </li>
+          <li>
+            Floating point numbers - real numbers (numbers with fractions).
+            Defined using float and double.
+          </li>
+          <li>
+            Structures - will be explained later, in the Structures section.
+          </li>
+        </ul>
+        <p>
+          The different types of variables define their bounds. A char can range
+          only from -128 to 127, whereas a long can range from -2,147,483,648 to
+          2,147,483,647 (long and other numeric data types may have another
+          range on different computers, for example - from
+          –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 on 64-bit
+          computer).
+        </p>
+        <p>
+          Note that C does not have a boolean type. Usually, it is defined using
+          the following notation:
+        </p>
+        <ul>
+          <li>#define BOOL char</li>
+          <li>#define FALSE 0</li>
+          <li>#define TRUE 1</li>
+        </ul>
+
+        <p>
+          C uses arrays of characters to define strings, and will be explained
+          in the Strings section.
+        </p>
+        <p>
+          For numbers, we will usually use the type int. On most computers
+          today, it is a 32-bit number, which means the number can range from
+          -2,147,483,648 to 2,147,483,647.
+        </p>
+        <p>
+          To define the variables foo and bar, we need to use the following
+          syntax:
+        </p>
+        <code
+          >int foo;<br />
+          int bar = 1;
+        </code>
+        <p>
+          The variable foo can be used, but since we did not initialize it, we
+          don't know what's in it. The variable bar contains the number 1.
+        </p>
+      </section>
+      <section id="Arrays" class="main-section">
+        <header>Arrays</header>
+        <p>
+          Arrays are special variables which can hold more than one value under
+          the same variable name, organised with an index. Arrays are defined
+          using a very straightforward syntax:
+        </p>
+        <code
+          >/* defines an array of 10 integers */<br />
+          int numbers[10];
+        </code>
+        <p>
+          Accessing a number from the array is done using the same syntax.
+          Notice that arrays in C are zero-based, which means that if we defined
+          an array of size 10, then the array cells 0 through 9 (inclusive) are
+          defined. numbers[10] is not an actual value.
+        </p>
+        <code
+          >int numbers[10];<br />
+          /* populate the array */<br />
+          numbers[0] = 10;<br />
+          numbers[1] = 20;<br />
+          numbers[2] = 30;<br />
+          numbers[3] = 40;<br />
+          numbers[4] = 50;<br />
+          numbers[5] = 60;<br />
+          numbers[6] = 70;<br /><br />
+
+          /* print the 7th number from the array, which has an index of 6 */<br />
+          printf("The 7th number in the array is %d", numbers[6]);
+        </code>
+        <p>
+          Arrays can only have one type of variable, because they are
+          implemented as a sequence of values in the computer's memory. Because
+          of that, accessing a specific array cell is very efficient.
+        </p>
+      </section>
+      <section id="Multidimentional_Arrays" class="main-section">
+        <header>Multidimentional Arrays</header>
+        <p>
+          In the previous tutorials on Arrays, we covered, well, arrays and how
+          they work. The arrays we looked at were all one-dimensional, but C can
+          create and use multi-dimensional arrays. Here is the general form of a
+          multidimensional array declaration:
+        </p>
+        <code>type name[size1][size2]...[sizeN]; </code>
+        <p>For example, here's a basic one for you to look at -</p>
+        <code>int foo[1][2][3]; </code>
+        <p>or maybe this one -</p>
+        <code>char vowels[1][5] = {{'a', 'e', 'i', 'o', 'u'}}; </code>
+        <p>
+          Two-dimensional Arrays The simplest form of multidimensional array is
+          the two-dimensional array. A two-dimensional array is pretty much a
+          list of one-dimensional arrays. To declare a two-dimensional integer
+          array of size [ x ][ y ], you would write something like this −
+        </p>
+        <code>type arrayName [x][y];</code>
+        <p>
+          Where type can be any C data type (int, char, long, long long, double,
+          etc.) and arrayName will be a valid C identifier, or variable. A
+          two-dimensional array can be considered as a table which will have [ x
+          ] number of rows and [ y ] number of columns.
+        </p>
+        <p>
+          And honestly, you really don't have to put in a [ x ] value really,
+          because if you did something like this -
+        </p>
+        <code
+          >char vowels[][5] = { {'A', 'E', 'I', 'O', 'U'}, {'a', 'e', 'i', 'o',
+          'u'} };
+        </code>
+
+        <p>
+          the compiler would already know that there are two "dimensions" you
+          could say, but, you NEED a [ y ] value!! The compiler may be smart,
+          but it will not know how many integers, characters, floats, whatever
+          you're using you have in the dimensions. Keep that in mind.
+        </p>
+        <p>Initializing Two-Dimensional Arrays</p>
+        <p>
+          Multidimensional arrays may be used by specifying bracketed[] values
+          for each row. Below is an array with 3 rows and each row has 4
+          columns. To make it easier, you can forget the 3 and keep it blank,
+          it'll still work.
+        </p>
+        <code
+          >int a[3][4] = { {0, 1, 2, 3} , /* initializers for row indexed by 0
+          */ {4, 5, 6, 7} , /* initializers for row indexed by 1 */ {8, 9, 10,
+          11} /* initializers for row indexed by 2 */ };</code
+        >
+        <p>
+          The inside braces, which indicates the wanted row, are optional. The
+          following initialization is the same to the previous example −
+        </p>
+        <code>int a[3][4] = {0,1,2,3,4,5,6,7,8,9,10,11};</code>
+        <p>Accessing Two-Dimensional Array Elements</p>
+        <p>
+          An element in a two-dimensional array is accessed by using the
+          subscripts, i.e., row index and column index of the array. For example
+          −
+        </p>
+        <code>int val = a[2][3];</code>
+        <p>
+          The above statement will take the 4th element from the 3rd row of the
+          array.
+        </p>
+      </section>
+      <section id="Conditions" class="main-section">
+        <header>Conditions</header>
+        <p>
+          In life, we all have to make decisions. In order to make a decision we
+          weigh out our options and so do our programs.
+        </p>
+        <p>
+          Here is the general form of the decision making structures found in C.
+        </p>
+        <code
+          >int target = 10;<br />if (target == 10) {
+          <br />&emsp;&emsp;printf("Target is equal to 10"); <br />}
+        </code>
+        <p>
+          The if statement allows us to check if an expression is true or false,
+          and execute different code according to the result.
+        </p>
+        <p>
+          To evaluate whether two variables are equal, the == operator is used,
+          just like in the first example. Inequality operators can also be used
+          to evaluate expressions. For example:
+        </p>
+        <code
+          >int foo = 1;<br />
+          int bar = 2;<br />
+
+          if (foo &lt; bar) {<br />&emsp; printf("foo is smaller than bar.");<br />
+          }<br />
+
+          if (foo &gt; bar) {<br />&emsp; printf("foo is greater than bar.");<br />
+          }</code
+        >
+        <p>
+          We can use the else keyword to execute code when our expression
+          evaluates to false.
+        </p>
+        <code
+          >int foo = 1;<br />
+          int bar = 2;<br />
+
+          if (foo &lt; bar) {<br />&emsp; printf("foo is smaller than bar.");<br />
+          } else {<br />&emsp; printf("foo is greater than bar.");<br />
+          }</code
+        >
+        <p>
+          Sometimes we will have more than two outcomes to choose from. In these
+          cases, we can "chain" multiple if else statements together.
+        </p>
+      </section>
+      <section id="Strings" class="main-section">
+        <header>Strings</header>
+        <p>
+          Strings in C are actually arrays of characters. Although using
+          pointers in C is an advanced subject, fully explained later on, we
+          will use pointers to a character array to define simple strings, in
+          the following manner:
+        </p>
+        <code>char * name = "John Smith";</code>
+        <p>
+          This method creates a string which we can only use for reading. If we
+          wish to define a string which can be manipulated, we will need to
+          define it as a local character array:
+        </p>
+        <code>char name[] = "John Smith";</code>
+        <p>
+          This notation is different because it allocates an array variable so
+          we can manipulate it. The empty brackets notation [] tells the
+          compiler to calculate the size of the array automatically. This is in
+          fact the same as allocating it explicitly, adding one to the length of
+          the string:
+        </p>
+        <code
+          >char name[] = "John Smith";<br />
+          /* is the same as */<br />
+          char name[11] = "John Smith";</code
+        >
+        <p>
+          The reason that we need to add one, although the string John Smith is
+          exactly 10 characters long, is for the string termination: a special
+          character (equal to 0) which indicates the end of the string. The end
+          of the string is marked because the program does not know the length
+          of the string - only the compiler knows it according to the code.
+        </p>
+        <p>
+          We can use the printf command to format a string together with other
+          strings, in the following manner:
+        </p>
+        <code
+          >char * name = "John Smith"; int age = 27; /* prints out 'John Smith
+          is 27 years old.' */ printf("%s is %d years old.\n", name, age);</code
+        >
+        <p>
+          Notice that when printing strings, we must add a newline (\n)
+          character so that our next printf statement will print in a new line.
+        </p>
+        <p>
+          The function 'strlen' returns the length of the string which has to be
+          passed as an argument:
+        </p>
+        <code>char * name = "Nikhil"; printf("%d\n",strlen(name));</code>
+        <p>
+          The function strncmp compares between two strings, returning the
+          number 0 if they are equal, or a different number if they are
+          different. The arguments are the two strings to be compared, and the
+          maximum comparison length. There is also an unsafe version of this
+          function called strcmp, but it is not recommended to use it. For
+          example:
+        </p>
+        <code
+          >char * name = "John";<br />
+
+          if (strncmp(name, "John", 4) == 0) {<br />&emsp; printf("Hello,
+          John!\n");<br />
+          } else {<br />&emsp; printf("You are not John. Go away.\n");<br />
+          }
+        </code>
+        <p>End of section</p>
+      </section>
+    </main>
+  </body>
+</html>
