@@ -15,7 +15,7 @@
   }
 
   .bb1 {
-    --building-color1: #999;
+    --building-color1: #aa80ff;;
     display: flex;
     flex-direction: column;
     align-items: center;
