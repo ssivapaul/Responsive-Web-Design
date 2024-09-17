@@ -26,6 +26,7 @@
     justify-content: space-evenly;
   }
 
+  /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
   .bb1 {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -86,6 +87,7 @@
     top: 0px;
   }
 
+  /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
   .fb1 {
     width: 10%;
     height: 60%;
