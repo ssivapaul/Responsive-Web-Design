@@ -41,9 +41,15 @@
   
   .bb1a {
     background-color: var(--building-color1);
-    background: linear-gradient (var(--building-color1), var(--window-color1));
     width: 70%;
+  }
+
+  .bb1-window {
     height: 10%;
+    background: linear-gradient(
+        var(--building-color1),
+        var(--window-color1)
+      );
   }
   
   .bb1b {
