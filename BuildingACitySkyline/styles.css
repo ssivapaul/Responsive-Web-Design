@@ -40,7 +40,6 @@
   }
   
   .bb1a {
-    background-color: var(--building-color1);
     width: 70%;
   }
 
@@ -54,14 +53,10 @@
   
   .bb1b {
     width: 80%;
-    height: 10%;
-    background-color: var(--building-color1);
   }
   
   .bb1c {
     width: 90%;
-    height: 10%;
-    background-color: var(--building-color1);
   }
   
   .bb1d {
