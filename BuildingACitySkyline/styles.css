@@ -61,7 +61,7 @@
   
   .bb1d {
     width: 100%;
-    background: linear-gradient(orange, var(--building-color1), var(--window-color1));
+    background: linear-gradient(orange, var(--building-color1) 80%, var(--window-color1));
   }
 
   .bb2 {
