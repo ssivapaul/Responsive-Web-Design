@@ -70,6 +70,11 @@
     height: 50%;
     background-color: var(--building-color2);
   }
+
+  .bb2b {
+    height: 100%;
+    width: 100%;
+  }
   
   .bb3 {
     width: 10%;
