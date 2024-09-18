@@ -75,7 +75,7 @@
   .bb2b {
     height: 100%;
     width: 100%;
-    background: linear-gradient(
+    background: repeating-linear-gradient(
   var(--building-color2) 0%,
   var(--building-color2) 6%,
   var(--window-color2) 6%,
