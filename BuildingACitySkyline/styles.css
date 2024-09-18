@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  
+
   /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
   .bb1 {
     width: 10%;
@@ -58,8 +58,8 @@
         var(--building-color1),
         var(--window-color1)
       );
-  }
-  
+  }  
+
   .bb1b {
     width: 80%;
   }
@@ -81,15 +81,15 @@
 
   .bb2a {
     border-bottom: 5vh solid var(--building-color2);
-    /*border-left: 5vw solid transparent;
-    border-right: 5vw solid transparent;*/
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
   }
 
   .bb2b {
     height: 100%;
     width: 100%;
     background: repeating-linear-gradient(
-  var(--building-color2) 0%,
+  var(--building-color2),
   var(--building-color2) 6%,
   var(--window-color2) 6%,
   var(--window-color2) 9%
@@ -109,7 +109,6 @@
   .bb4 {
     width: 11%;
     height: 58%;
-    background-color: var(--building-color4);
   }
 
   .bb4a {
@@ -134,13 +133,6 @@
     width: 18%;
     height: 90%;
     background-color: var(--window-color4)
-  }
-
-  .foreground-buildings {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
   }
 
   /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
