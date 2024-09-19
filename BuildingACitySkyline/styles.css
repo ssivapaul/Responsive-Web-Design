@@ -294,3 +294,7 @@
       var(--window-color3) 30%
     );
   }
+
+  @media (max-width: 1000px) {
+  
+  }
