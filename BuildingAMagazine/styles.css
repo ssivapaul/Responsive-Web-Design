@@ -89,6 +89,7 @@ img {
 }
 
 .social-icons {
+  grid-template-columns: repeat(5, 1fr);
   display: grid;
   font-size: 3rem;
 }
