@@ -135,3 +135,9 @@ hr {
 .text-with-images {
   display: grid;
 }
+
+.text-with-images {
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  display: grid;
+}
