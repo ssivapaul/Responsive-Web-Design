@@ -158,6 +158,7 @@ hr {
 }
 
 .image-wrapper {
+  place-items: center;
   gap: 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
