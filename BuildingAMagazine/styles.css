@@ -96,3 +96,9 @@ img {
   display: grid;
   font-size: 3rem;
 }
+
+.text {
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  grid-column: 2 / 3;
+}
