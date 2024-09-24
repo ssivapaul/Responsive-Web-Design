@@ -144,5 +144,6 @@ hr {
 }
 
 .lists {
+  margin-top: 2rem;
   list-style-type: none;
 }
