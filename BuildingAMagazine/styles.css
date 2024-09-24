@@ -147,3 +147,12 @@ hr {
   margin-top: 2rem;
   list-style-type: none;
 }
+
+.lists li {
+  margin-bottom: 1.5rem;
+}
+
+.list-title,
+.list-subtitle {
+  color: #00beef;
+}
