@@ -106,6 +106,8 @@ img {
 }
 
 .first-paragraph::first-letter {
+  float: left;
+  margin-right: 1rem;
   font-size: 6rem;
   color: orangered;
 }
