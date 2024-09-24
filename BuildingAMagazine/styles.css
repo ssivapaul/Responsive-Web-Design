@@ -104,3 +104,8 @@ img {
   letter-spacing: 0.6px;
   grid-column: 2 / 3;
 }
+
+.first-paragraph::first-letter {
+  font-size: 6rem;
+  color: orangered;
+}
