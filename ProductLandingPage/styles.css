@@ -7,63 +7,55 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   height: 100vh;
-  position: relative;
-  padding: 0px;
-  box-sizing: content-box;
+  width: 100%;
   background-color: rgb(189, 218, 218);
 }
 
-#header {
+#nav-bar {
   position: fixed;
-  width: 80%;
+  top: 0;
+  left: 0;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  overflow: hidden;
-  margin: 30px 0px;
-  z-index: 1;
-}
-#header div {
-  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #88a1b8;
 }
 
+.header-container {
+  display: flex;
+}
 #header-img {
-  border-radius: 25px;
   width: 150px;
-  height: 100px;
-  align-self: center;
+  height: 75px;
 }
 span {
-  position: absolute;
-  font-size: 2.5em;
-  margin-left: 200px;
+  font-size: 2em;
+  margin-left: 10px;
   align-self: center;
   text-wrap: nowrap;
 }
 
-#nav-bar {
-  display: flex;
-}
-
 .nav-link {
-  padding: 10px;
-  text-decoration: none;
-  align-self: center;
-  margin: 0 30px;
-  font-size: 1.2rem;
-  color: black;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.nav-link:hover {
-  border-radius: 10px;
+.nav-link li a {
+  text-decoration: none;
   color: white;
+  padding: 20px;
+}
 
+.nav-link li a:hover {
+  border-radius: 10px;
+  color: black;
   background: orange;
 }
 
 #form-header {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 100px;
   font-family: arial;
   font-size: 2rem;
@@ -74,12 +66,11 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   margin-top: 20px;
 }
 
 #email {
-  padding: 10px;
+  padding-left: 10px;
   border-radius: 5px;
   width: 300px;
   height: 30px;
@@ -90,8 +81,8 @@ span {
   margin-top: 20px;
   font-size: 1.1rem;
   font-weight: bold;
-  width: 150px;
-  height: 40px;
+  width: 140px;
+  height: 30px;
   border: 1px solid grey;
   border-radius: 5px;
   background-color: orange;
@@ -127,6 +118,10 @@ span {
   padding-left: 50px;
   margin-bottom: 15px;
   font-size: 1.5rem;
+}
+
+.desc p {
+  padding-left: 50px;
 }
 
 #how-it-works {
@@ -228,5 +223,7 @@ hr {
 @media (max-width: 1200px) {
   #header {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
