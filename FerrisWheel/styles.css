@@ -8,3 +8,9 @@
   border-radius: 50%;
   margin-left: 50px;
 }
+
+.line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+}
