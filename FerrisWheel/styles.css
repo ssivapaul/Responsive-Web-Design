@@ -10,10 +10,15 @@
 }
 
 .line {
+  transform-origin: 0% 0%;
   position: absolute;
   left: 50%;
   top: 50%;
   background-color: black;
   width: 50%;
   height: 2px;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
 }
