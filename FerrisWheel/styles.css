@@ -50,6 +50,7 @@
   background-color: red;
   width: 20%;
   height: 20%;
+  animation: cabins 10s linear infinite;
 }
 
 .cabin:nth-of-type(1) {
