@@ -63,7 +63,7 @@ body {
   border-bottom-right-radius: 65%;
   width: 50%;
   height: 45%;
-  background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+  background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
   top: 10%;
   left: 25%;
   z-index: 1;
@@ -92,7 +92,7 @@ body {
   position: absolute;
   width: 50%;
   height: 45%;
-  background-color: gray;
+  background-color: var(--penguin-skin);
   top: 10%;
   left: 25%;
   border-radius: 0% 0% 100% 100%;
@@ -126,6 +126,8 @@ body {
 
 :root {
   --penguin-face: white;
+  --penguin-picorna: orange;
+  --penguin-skin: gray;
 }
 
 .eye {
@@ -171,7 +173,7 @@ body {
 
 .beak {
   height: 10%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
 
@@ -203,8 +205,45 @@ body {
   left: 12px;
 }
 
-.foot {
+.foot.left {
+  position: absolute;
+  left: 25%;
   width: 15%;
   height: 30%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  transform: rotate(80deg);
+  z-index: -1;
+}
+
+.foot.right {
+  position: absolute;
+  right: 25%;
+  width: 15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  transform: rotate(-80deg);
+  z-index: -1;
+}
+
+.arm {
+  width: 30%;
+  height: 60%;
+  background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
+}
+
+.arm.left {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  transform-origin: 0% 0%;
+}
+
+.arm.right {
+  position: absolute;
+  top: 0%;
+  right: -5%;
 }
