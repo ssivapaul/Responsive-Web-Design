@@ -31,7 +31,7 @@ a {
   padding: 1rem 2rem;
 }
 
-li a:hover {
+#nav-links li a:hover {
   background-color: black;
 }
 
@@ -67,7 +67,7 @@ li a:hover {
   text-align: center;
 }
 
-#projects h2 {
+h2 {
   font-size: 3rem;
   color: white;
   margin: 0 auto;
@@ -93,4 +93,35 @@ li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   grid-gap: 0;
   margin: 0 auto;
+}
+
+.contacts {
+  background-color: rgb(26, 106, 132);
+  width: 100%;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts p {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.profile-links {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (width < 800px) {
+  h2 {
+    font-size: 5rem;
+  }
 }
